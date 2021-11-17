@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-box {
+  width: 80%;
+  max-width: 400px;
+}
+
+.img-box img {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.form-holder {
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-holder form {
+  width: 90%;
+}
+
+.form-holder form button {
+  display: block;
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 0.7rem 0.9rem;
+  margin-top: 1rem;
+  border-radius: 0.8rem;
+  outline: none;
+  background: rgb(89, 34, 216);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+
+.form-holder form button:hover {
+  background: rgb(112, 67, 219);
+}
+
+.form-holder h1 {
+  font-size: 1.8rem;
+  padding-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.form-holder .form-item {
+  padding-bottom: 1.1rem;
+}
+
+.form-holder .form-item label {
+  color: rgb(55, 22, 133);
+  font-weight: 600;
+}
+
+.form-holder .form-item input[type="text"],
+.form-holder .form-item input[type="password"] {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-top: 0.3rem;
+  border: 0;
+  background: #f5f8fa;
+  border: 1px solid #ccc;
+  border-radius: 0.8rem;
+  transition: all 0.2s linear;
+  opacity: 0.9;
+}
+
+.form-holder .form-item input[type="text"]:focus,
+.form-holder .form-item input[type="password"]:focus {
+  border: 1px solid #555;
+  background: #fff;
+  opacity: 1;
+}
+
+.form-holder .form-item.forgot {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -0.8rem;
+}
+
+.form-holder .form-item.forgot a {
+  font-size: 0.9rem;
+  color: rgb(86, 49, 170);
+  text-decoration: none;
+}
+
+.form-holder .form-item.forgot a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+  .img-box {
+    padding-right: 40px;
+  }
+  .form-holder h1 {
+    padding-bottom: 2.3rem;
+  }
+}
